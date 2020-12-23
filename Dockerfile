@@ -39,6 +39,4 @@ WORKDIR /etc/nginx/ssl/
 RUN	openssl req -newkey rsa:2048 -x509 -days 365 -nodes -out new.crt -keyout new.key \
     -subj "/C=RU/ST=Tatarstan/L=Kazan/O=21-School/OU=Ignis/CN=mpowder"
 
-WORKDIR /etc/nginx/sites-available/
-
 CMD bash /var/run.sh
